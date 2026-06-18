@@ -4,6 +4,15 @@
 *.blend1
 Ortho/
 
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Local preview renders
+_preview*.png
+
 # OS / editor cruft
 Thumbs.db
 .DS_Store
