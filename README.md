@@ -10,9 +10,30 @@ Tier 1 focus: animated eyes + the local affect (emotion) engine.
 
 ## Repo contents
 
+- [`cosmos_eyes.py`](cosmos_eyes.py) — idle eyes renderer (see below).
 - [`CLAUDE.md`](CLAUDE.md) — full project context, locked decisions, and roadmap.
 - [`cosmos-build-roadmap.md`](cosmos-build-roadmap.md) — build plan.
 - `cosmos-bom.xlsx` — costed bill of materials.
+
+## Idle eyes (`cosmos_eyes.py`)
+
+A RoboEyes-inspired ([FluxGarage/RoboEyes](https://github.com/FluxGarage/RoboEyes))
+animated-eye renderer for the ST7789 LCD — the first, sensor-free stage of the
+emotion system. Two glowing cyan eyes that auto-blink, occasionally look around
+(idle mode), and do an occasional happy squint, so Cosmos feels alive before any
+input sensors are wired up.
+
+```bash
+# On the Pi:
+python3 cosmos_eyes.py
+
+# Preview the look on any machine with Pillow (no Pi hardware needed):
+python3 cosmos_eyes.py --still eyes.png
+```
+
+Dependencies on the Pi: `adafruit-blinka`, `adafruit-circuitpython-rgb-display`,
+`pillow`. Tuning knobs (eye size, colors, blink/idle timing) are constants at the
+top of the script.
 
 > Large 3D assets (`.stl`, `.blend`) are intentionally **not** tracked in git (see `.gitignore`). Use Git LFS if they ever need to live here.
 
