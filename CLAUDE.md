@@ -208,3 +208,7 @@ apply the BGR fix.
 - Don't produce CAD/mechanical parts; give constraints when asked.
 - Keep the emotion system **local and offline** for now; cloud is a later, optional layer.
 - Prioritize the "feels alive and remembers its owner" experience over spec-sheet power.
+- **No personal information in anything that goes to GitHub** (commits, file
+  contents, commit author metadata, etc.). Keep all repo content strictly
+  professional and impersonal — no names, relationships, gift framing, personal
+  file paths, or emails. Scrub before committing.
