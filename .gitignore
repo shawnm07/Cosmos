@@ -1,0 +1,10 @@
+# Large 3D / binary assets — kept out of git (use Git LFS if you want them tracked)
+*.stl
+*.blend
+*.blend1
+Ortho/
+
+# OS / editor cruft
+Thumbs.db
+.DS_Store
+desktop.ini
